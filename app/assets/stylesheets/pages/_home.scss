@@ -1,10 +1,16 @@
 // Specific CSS for your home-page
+
 .big_container {
+  height:100%;
+  background-image: url('https://images.unsplash.com/photo-1492892132812-a00a8b245c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+
   .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 50px;
+    background-width: 100%;
   }
   .banner {
     justify-content: space-around;
@@ -12,7 +18,9 @@
     width: 100%;
     font-size: 20px;
     height: 50px;
+    padding: none;
     position: relative;
+    margin-top: 0;
     #name {
       font-family: 'Montserrat', sans-serif;
       font-size: 30px;
@@ -32,6 +40,7 @@
     }
     a:hover {
       color: gray;
+      text-decoration: none;
     }
   }
 }
@@ -43,6 +52,7 @@
   margin: 20px;
   box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  position: relative;
   h3 {
     padding: 0px 30px 10px 30px;
   }
@@ -53,6 +63,11 @@
   img {
     width: 100%;
     border-radius: 5px;
+  }
+  .options {
+    position: absolute;
+    bottom: 5px;
+    left: 30px;
   }
 }
 

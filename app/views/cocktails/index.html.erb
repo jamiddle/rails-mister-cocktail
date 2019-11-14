@@ -11,7 +11,11 @@
         <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="">
         <div class="text">
           <h3 id='name' ><%= cocktail.name %></h3>
-          <%= link_to "details", cocktail_path(cocktail) %>
+          <div class='options'>
+            <%= link_to "details", cocktail_path(cocktail) %>
+            <br>
+            <%= link_to "delete", cocktail_path(cocktail), method: :delete %>
+          </div>
         </div>
       </div>
     <% end %>
