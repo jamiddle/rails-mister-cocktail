@@ -1,0 +1,21 @@
+<div class="big_container">
+  <div class="banner">
+    <p id='name'>Cocktails</p>
+    <p><%= link_to 'Add Cocktail', new_cocktail_path %></p>
+  </div>
+
+  <div class="container">
+
+    <% @cocktails.each do |cocktail| %>
+      <div class='card'>
+        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="">
+        <div class="text">
+          <h3 id='name' ><%= cocktail.name %></h3>
+          <%= link_to "details", cocktail_path(cocktail) %>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
+
+</div>
